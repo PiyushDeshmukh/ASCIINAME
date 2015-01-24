@@ -67,7 +67,6 @@ if __name__ == "__main__" :
 	FILE = open("asciiart.cpp", 'w')
 	FILE.write(out)
 	FILE.close()
-	os.system("cd ~/Desktop/codes")
 	os.system("make asciiart")
 	print ("\n\n\n")
 	temp = str(os.system("./asciiart"))

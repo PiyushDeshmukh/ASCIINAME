@@ -64,13 +64,24 @@ if __name__ == "__main__" :
 	     char = raw_input("Enter a single character and not a group of characters (and neither space) : ")
 	cond = process(name.upper())          ## form the string in `if` condition
 	out = make_file(cond, char)   ## design .cpp file
-	FILE = open("asciiart.cpp", 'w')
+	FILE = open(name + ".cpp", 'w')
 	FILE.write(out)
 	FILE.close()
-	os.system("make asciiart")
+	os.system("make " + name)
 	print ("\n\n\n")
-	temp = str(os.system("./asciiart"))
-	output = re.sub('[0]','', temp)
-	print (output)
+	str(os.system("./" + name))
 	print ("\n\n\n")
-
+	
+	## Deletion of .cpp file
+	choice = raw_input("Do you want to delete " + name + ".cpp ? (Y/N) : ")
+	while not (choice == 'Y' or choice == 'N'):
+	     choice = raw_input("Enter your choice as 'Y' for yes or 'N' for no : ")
+	if choice == 'Y':
+	     os.system("rm " + name + ".cpp")
+	
+	## Deletion of executable file
+	choice = raw_input("Do you want to delete the executable ? (Y/N) : ")
+	while not (choice == 'Y' or choice == 'N'):
+	     choice = raw_input("Enter your choice as 'Y' for yes or 'N' for no : ")
+	if choice == 'Y':
+	     os.system("rm " + name)

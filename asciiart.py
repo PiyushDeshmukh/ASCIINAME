@@ -60,6 +60,8 @@ if __name__ == "__main__" :
 			print ("Please enter alphabets only.")
 		     	length = 13
 	char = raw_input("Enter the character you want to display the art in : ")
+	while not (len(char) == 1 and char != ' '):
+	     char = raw_input("Enter a single character and not a group of characters (and neither space) : ")
 	cond = process(name.upper())          ## form the string in `if` condition
 	out = make_file(cond, char)   ## design .cpp file
 	FILE = open("asciiart.cpp", 'w')

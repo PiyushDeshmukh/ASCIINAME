@@ -1,4 +1,4 @@
-### ![ASCIINAME](http://piyushdeshmukh.github.io/ASCIINAME/)
+### [ASCIINAME](http://piyushdeshmukh.github.io/ASCIINAME/)
 ASCIINAME is a tool that displays text in ASCII art form. Originally, it was designed to write names in ASCII art form, but I am looking forward to support more Unicode characters in near future, for now, only strings with one word containing alphabets only are supported.
 
 ### PRE-REQUISITES
@@ -15,4 +15,4 @@ The script creates 2 files namely, the name entered from stdin as a .cpp and a e
 This is kept deliberately, so that one does not need to run .py file solely from starting, he can get executable or .cpp file of desired string automatically. Please consider entering your password (if asked), deleting those files require to execute `rm` as sudo.
 
 ### How it works?
-Read more at ![ASCIINAME](http://piyushdeshmukh.github.io/ASCIINAME/)
+Read more at [ASCIINAME](http://piyushdeshmukh.github.io/ASCIINAME/)

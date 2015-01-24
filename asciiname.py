@@ -77,11 +77,11 @@ if __name__ == "__main__" :
 	while not (choice == 'Y' or choice == 'N'):
 	     choice = raw_input("Enter your choice as 'Y' for yes or 'N' for no : ")
 	if choice == 'Y':
-	     os.system("rm " + name + ".cpp")
+	     os.system("sudo rm " + name + ".cpp")
 	
 	## Deletion of executable file
 	choice = raw_input("Do you want to delete the executable ? (Y/N) : ")
 	while not (choice == 'Y' or choice == 'N'):
 	     choice = raw_input("Enter your choice as 'Y' for yes or 'N' for no : ")
 	if choice == 'Y':
-	     os.system("rm " + name)
+	     os.system("sudo rm " + name)

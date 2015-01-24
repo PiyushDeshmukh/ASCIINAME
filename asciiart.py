@@ -56,6 +56,9 @@ if __name__ == "__main__" :
 		length = len(name)
 		if length > 12 :
 			print ("Please enter a name less than 12 characters.")
+		if not name.isalpha():
+			print ("Please enter alphabets only.")
+		     	length = 13
 	char = raw_input("Enter the character you want to display the art in : ")
 	cond = process(name.upper())          ## form the string in `if` condition
 	out = make_file(cond, char)   ## design .cpp file
@@ -64,9 +67,9 @@ if __name__ == "__main__" :
 	FILE.close()
 	os.system("cd ~/Desktop/codes")
 	os.system("make asciiart")
-	print "\n\n\n"
+	print ("\n\n\n")
 	temp = str(os.system("./asciiart"))
 	output = re.sub('[0]','', temp)
-	print output
-	print "\n\n\n"
+	print (output)
+	print ("\n\n\n")
 
